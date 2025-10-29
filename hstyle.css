@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+    background-color: black !important;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: white !important;
+}
+
+.row,.card {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+
+nav {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+
+    margin: 10px 20px;
+    list-style-type: none;
+}
+
+nav li a {
+    position: relative;
+    color: blue;
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: rgb(255, 0, 0);
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mtext {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+ #tex1 {
+    position: relative;
+    margin-top: 230px;
+    margin-left: 220px;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+#tex3 {
+    position: relative;
+    margin-left: 310px;
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-family: 'Itim',cursive;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 1.8;
+    opacity: 0.9;
+    z-index: 1;
+    border: 0 black solid;
+    -webkit-text-stroke: 1px rgba(8, 7, 7, 0.6);
+    border-radius: 30px;
+}
+.main .bannerimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url('images/backgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+#cate {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+  }
+  
+
+  #cate .tite {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  #cate .tite h2 {
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+  #cate .tite h4 {
+    color: #ccc;
+    font-family: 'Itim', cursive;
+    font-weight: lighter;
+  }
+  
+
+  .my-card {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  .my-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.25);
+  }
+  
+
+  .my-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #444;
+  }
+  
+
+  .my-card-body {
+    padding: 15px;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .my-card-body h5 {
+    font-size: 20px;
+    color: #ffb84d;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+  .my-card-body a {
+    color: aqua;
+  }
+  .my-card-body a,
+  .my-card-body a:visited {
+    color: aqua;
+    text-decoration: none;
+  }
+  
+  .my-card-body p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: white;
+  }
+
+ 
+
+.about1 {
+    height: 90vh;
+    width: 100%;
+}
+.about1 h1 {
+    margin: 90px 30px;
+    padding: 10px 50px;
+    text-align: center;
+    border: 3px solid rgba(255, 0, 0, 0.2);
+}
+.about1 h2 {
+    margin: 20px 30px;
+}
+.about1 p {
+    padding: 30px 140px;
+    font-size: 25px;
+    text-align: justify;
+    margin: 40px 30px;
+}
+  
+
+  @media (max-width: 768px) {
+
+    nav ul {
+        padding: 0 0;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+    nav li a {
+        font-size: 15px;
+    }
+
+    .bannerimg {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    #tex1 {
+        padding: 0 0;
+        margin-top: 170px;
+        margin-left: 15px;
+        text-align: start;
+        font-size: 22px;
+        opacity: 1;
+    }
+    #tex3 {
+        padding: 0 0;
+        margin: 30px 25px;
+        text-align: justify;
+        width: 65%;
+        font-size: 25px;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    #cate {
+      padding: 40px 10px;
+    }
+  
+    .my-card {
+      max-width: 300px;
+    }
+
+    .about1 h1 {
+        font-size: large;
+    }
+    .about1 h2 {
+        font-size: medium;
+        font-weight: lighter;
+    }
+    .about1 p {
+        padding: 5px 5px;
+        font-size: small;
+    }
+  }
+
+@media (max-width: 345px) and (min-width: 100px) {
+    #tex1 {
+        font-size: 20px;
+    }
+    #tex3 {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1299px) and (min-width: 1111px) {
+    #tex1 {
+        margin-top: 100px;
+    }
+    #tex3 {
+        font-size: 35px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 1020px) {
+    .main {
+        height: 100vh;
+    }
+    #tex1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    #tex3 {
+        font-size: 23px;
+        font-weight: lighter;
+        margin: 0;
+        overflow: hidden;
+        width: 45%;
+    }
+}
+
+@media (min-width: 765px) {
+    #tex1 {
+        margin-top: 170px;
+        margin-left: 30px;
+    }
+    #tex3 {
+        margin-left: 40px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 361px) and (min-width: 356px) {
+    #tex1 {
+        font-size: 20px;
+    }
+}
